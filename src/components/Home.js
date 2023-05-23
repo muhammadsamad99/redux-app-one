@@ -1,10 +1,11 @@
 import React from "react";
 
 function Home(props){
-
+    console.log('home:', props);
     return (
         <div>
             <div className="add-to-cart">
+                <span> {props.cartData.length} </span>
                 <img src="https://png.pngitem.com/pimgs/s/79-797280_cart-trolley-buy-add-plus-shopping-cart-with.png" />
             </div>
             <h1>Home Component</h1>
